@@ -1,0 +1,242 @@
+/* ===== Global Body ===== */
+body {
+    background: linear-gradient(145deg, #0a0f1f 0%, #1b3a57 50%, #0d1a29 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e6f1ff;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Profile Section (Centered Wrapper) ===== */
+.profile-section {
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 16px;
+}
+
+/* ===== Card Containers (Glass + Metallic Blue) ===== */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 18px;
+    border: 1px solid rgba(120,160,255,0.28);
+    backdrop-filter: blur(14px);
+    padding: 32px 24px;
+    margin: 22px 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(0, 0, 40, 0.45);
+}
+
+.intro-card {
+    border-bottom: 5px solid #4ab4ff;
+}
+
+/* ===== Avatar (Cool Blue Glow) ===== */
+.avatar, 
+.avatar-small {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border: 4px solid #4ab4ff;
+    box-shadow: 0 0 18px rgba(74, 180, 255, 0.6);
+    margin-bottom: 16px;
+}
+
+.avatar-small {
+    width: 68px;
+    height: 68px;
+    border: 3px solid #7acbff;
+    margin-bottom: 18px;
+}
+
+/* ===== Main Heading ===== */
+h1 {
+    margin: 8px 0 4px 0;
+    color: #e8f6ff;
+    letter-spacing: 1.5px;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+/* ===== Meta Text ===== */
+.meta {
+    color: #b8cfe8;
+    margin: 8px 0 14px 0;
+    font-size: 1.05em;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+}
+
+/* ===== Button – Royal Neon Blue ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 20px;
+
+    background: linear-gradient(135deg, #00a8ff, #0066ff);
+    color: #fff;
+
+    border-radius: 25px;
+    font-size: 1.07em;
+    font-weight: 600;
+    text-decoration: none;
+
+    box-shadow: 0 4px 16px rgba(0, 140, 255, 0.45);
+    transition: 0.28s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #4ac8ff, #0079ff);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 160, 255, 0.65);
+}
+
+/* ===== Silver-Blue Button ===== */
+.brown-btn {
+    background: linear-gradient(135deg, #1f2d40, #4ab4ff);
+    color: white;
+}
+
+/* ===== Details Section ===== */
+.card.detail-card {
+    text-align: left;
+    padding-top: 24px;
+}
+
+/* ===== Grid Boxes ===== */
+.details-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 18px 0 12px 0;
+    justify-content: center;
+}
+
+.details-grid > div {
+    flex: 1 1 210px;
+    padding: 14px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 14px;
+    border: 1px solid rgba(120,160,255,0.25);
+}
+
+/* ===== Sub Titles ===== */
+h2 {
+    color: #d7eaff;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-size: 1.12em;
+    border-bottom: 2px solid #4ab4ff;
+    padding-bottom: 4px;
+}
+
+/* ===== Links ===== */
+a, a:visited {
+    color: #72c7ff;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffffff;
+}
+
+/* ===== List ===== */
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 700px) {
+    .profile-section {
+        padding-top: 30px;
+    }
+
+    .details-grid {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 22px 14px;
+        max-width: 95%;
+    }
+
+    .avatar {
+        width: 92px;
+        height: 92px;
+    }
+}
+
+/* ===== Download Button (Blue + White Gold) ===== */
+.download-btn.gold {
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #c3e4ff, #7ec8ff);
+    color: #002b4d;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 14px;
+    text-decoration: none;
+
+    box-shadow: 0 4px 14px rgba(120,160,250,0.5);
+    transition: 0.3s;
+}
+
+
+
+.download-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 14px 35px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #e6f1ff;
+    background: linear-gradient(135deg, #0a1a2f, #123a63);
+    border: 2px solid #4fb4ff;
+    position: relative;
+    box-shadow: 0px 0px 12px rgba(79, 180, 255, 0.5);
+    transition: 0.3s;
+}
+
+/* Glow hover effect */
+.download-btn:hover {
+    background: linear-gradient(135deg, #123a63, #0a1a2f);
+    box-shadow: 0px 0px 20px rgba(79, 180, 255, 0.8);
+    transform: translateY(-3px);
+}
+
+/* Inner shine effect */
+.download-btn::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
